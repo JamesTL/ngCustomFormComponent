@@ -1,4 +1,5 @@
 .main-container{
-    max-width:1400px; 
-    margin: 0 auto;
+    max-width:800px; 
+    @apply pt-3 my-0 mx-auto;
+   
 }

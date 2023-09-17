@@ -12,8 +12,6 @@ export class ReactiveFormDemoComponent implements OnInit {
    */
   registrationForm: FormGroup = new FormGroup({});
 
-
-
 constructor(private readonly fb: FormBuilder){}
   ngOnInit(){
     this.registrationForm = this.fb.group({

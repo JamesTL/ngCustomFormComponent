@@ -7,11 +7,13 @@ import { LayoutModule } from './layout/layout.module';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { ReactiveFormDemoComponent } from './features/reactive-form-demo/reactive-form-demo.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FirstNameInputComponent } from './components/first-name-input/first-name-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ReactiveFormDemoComponent
+    ReactiveFormDemoComponent,
+    FirstNameInputComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { MatToolbarModule} from '@angular/material/toolbar';
 import { ReactiveFormDemoComponent } from './features/reactive-form-demo/reactive-form-demo.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FirstNameInputComponent } from './components/first-name-input/first-name-input.component';
+import { EmailFormInputComponent } from './components/email-form-input/email-form-input.component';
 
 
 
@@ -15,7 +16,8 @@ import { FirstNameInputComponent } from './components/first-name-input/first-nam
   declarations: [
     AppComponent,
     ReactiveFormDemoComponent,
-    FirstNameInputComponent
+    FirstNameInputComponent,
+    EmailFormInputComponent
   ],
   imports: [
     BrowserModule,

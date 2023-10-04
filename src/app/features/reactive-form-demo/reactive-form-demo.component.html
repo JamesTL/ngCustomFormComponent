@@ -17,11 +17,10 @@
             </div>
     
             <div class="mt-12">
-                <label for="email" class="block text-gray-700">Email</label>
-                <input type="email" formControlName ="email" name="email" id="email" class="form-input mt-1 block w-full">
-            </div>
+                <app-email-form-input formControlName="email"></app-email-form-input>
+            </div> 
     
-    
+
             <div class="mt-12">
                 <label for="password1" class="block text-gray-700">Password</label>
                 <input type="password" formControlName ="password1" name="password1" id="password1" class="form-input mt-1 block w-full">
@@ -41,22 +40,22 @@
     
     <div class="basis-1/3 bg-gray-100 p-3 ml-1">
         <h2>Form values</h2>
-       <pre> {{ registrationForm?.value | json }}</pre> 
+       <pre> {{ registrationForm.value | json }}</pre> 
          <pre><strong>Dirty:</strong> {{ registrationForm.dirty}}</pre>
 
         
-        <pre><strong>Touched:</strong> {{ registrationForm?.touched  }}</pre>
-        <pre><strong>Untouched:</strong> {{ registrationForm?.untouched}}</pre>
+        <pre><strong>Touched:</strong> {{ registrationForm.touched  }}</pre>
+        <pre><strong>Untouched:</strong> {{ registrationForm.untouched}}</pre>
        
-        <pre><strong>Valid:</strong> {{ registrationForm?.valid }}</pre>
-        <pre><strong>Invalid:</strong> {{ registrationForm?.invalid  }}</pre>
+        <pre><strong>Valid:</strong> {{ registrationForm.valid }}</pre>
+        <pre><strong>Invalid:</strong> {{ registrationForm.invalid  }}</pre>
         
-        <pre><strong>Disabled:</strong>  {{ registrationForm?.disabled  }}</pre>
-        <pre><strong>Enabled:</strong> {{ registrationForm?.enabled }}</pre>
+        <pre><strong>Disabled:</strong>  {{ registrationForm.disabled  }}</pre>
+        <pre><strong>Enabled:</strong> {{ registrationForm.enabled }}</pre>
        
-        <pre><strong>Pending:</strong> {{ registrationForm?.pending }}</pre>
-        <pre><strong>Updated on:</strong> {{ registrationForm?.updateOn }}</pre>
-        <pre><strong>Validator:</strong>{{ registrationForm?.validator }}</pre>
+        <pre><strong>Pending:</strong> {{ registrationForm.pending }}</pre>
+        <pre><strong>Updated on:</strong> {{ registrationForm.updateOn }}</pre>
+        <pre><strong>Validator:</strong>{{ registrationForm.validator }}</pre>
     </div> 
     
 </div>
